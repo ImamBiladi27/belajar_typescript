@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD User Golang + TypeScript</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input {
+        width: 300px;
+      }
+      button {
+        margin-top: 10px;
+      }
+      .user {
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CRUD User</h1>
+
+    <label
+      >Nama:
+      <input type="text" id="name" />
+    </label>
+
+    <label
+      >Email:
+      <input type="email" id="email" />
+    </label>
+
+    <button onclick="createUser()">Tambah User</button>
+
+    <h2>Ambil User berdasarkan ID</h2>
+    <input type="number" id="userId" placeholder="Masukkan ID" />
+    <button onclick="getUser()">Ambil</button>
+
+    <div id="userResult" class="user"></div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
